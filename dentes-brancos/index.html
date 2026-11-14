@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentes Brancos | Odontologia Especializada</title>
+    <style>
+        :root {
+            --primary-color: #87CEEB;
+            --secondary-color: #f4f9fd;
+            --text-color: #333;
+            --white: #ffffff;
+            --whatsapp-green: #25D366;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { color: var(--text-color); line-height: 1.6; background-color: var(--secondary-color); }
+
+        /* Menu */
+        header { background: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text-color); font-weight: 500; }
+
+        /* Hero */
+        .hero { background: var(--primary-color); color: white; padding: 80px 5%; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .btn { background: var(--white); color: var(--primary-color); padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+
+        /* Sections */
+        section { padding: 60px 5%; }
+        h2 { text-align: center; margin-bottom: 40px; color: var(--primary-color); }
+        .container-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--white); padding: 30px; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+        /* Footer & Float */
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: var(--whatsapp-green); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+        @media (max-width: 768px) { .hero h1 { font-size: 1.8rem; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">DENTES BRANCOS</div>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <h1>Transformamos Sorrisos com Excelência</h1>
+    <p>A Dentes Brancos oferece o melhor cuidado para sua saúde bucal em um ambiente moderno e acolhedor.</p>
+    <a href="https://wa.me/5541999999999" class="btn">Agende sua consulta agora</a>
+</section>
+
+<section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="container-cards">
+        <div class="card"><h3>Limpeza Dentária</h3><p>Remoção completa de tártaro e placa bacteriana para um sorriso saudável.</p></div>
+        <div class="card"><h3>Placas Dentárias</h3><p>Confeccionamos placas personalizadas para bruxismo e proteção dental.</p></div>
+        <div class="card"><h3>Aparelhos Dentários</h3><p>Tratamentos ortodônticos avançados para alinhar seu sorriso com precisão.</p></div>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2>Por que nos escolher?</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">Na Dentes Brancos, aliamos tecnologia de ponta a um atendimento humanizado. Nossa missão é elevar sua autoestima através de tratamentos odontológicos seguros, eficientes e personalizados para cada necessidade.</p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Dentes Brancos - Odontologia Especializada</p>
+</footer>
+
+<a href="https://wa.me/5541999999999" class="whatsapp-float" target="_blank">WhatsApp</a>
+
+</body>
+</html>
